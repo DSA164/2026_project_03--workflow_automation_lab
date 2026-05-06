@@ -4,9 +4,9 @@
 
 This project is part of the `AI-Engineering-Lab` learning roadmap.
 
-Its goal is to build practical skills in **AI workflow automation** before moving deeper into RAG and agentic systems.
+It is a bridge between local LLM foundations and more advanced RAG / agentic systems.
 
-The focus is not only on using n8n visually, but on understanding how to build robust data pipelines:
+Its purpose is to learn how to build practical AI-ready workflows:
 
 ```text
 source
@@ -28,65 +28,61 @@ alert
 
 ## Why this project exists
 
-The original AI Engineering Lab roadmap already covers LLM playgrounds, local LLM servers, RAG, agents, vision, multimodal assistants, robotics and AI platforms.
+The previous roadmap moved quickly from local LLMs to RAG and agents.
 
-However, for real enterprise AI workflows, one important practical layer is needed before RAG and agents:
+For real enterprise AI systems, one practical layer is needed first:
 
-> workflow automation, data ingestion, JavaScript transformation, scoring, alerting and persistence.
+- n8n workflow orchestration
+- HTTP/API ingestion
+- JavaScript Code Nodes
+- scraping-light workflows
+- data normalization
+- deduplication
+- scoring
+- storage
+- alerting
+- error handling
 
-This project fills that gap.
+This is not a RAG project.
 
-## Main learning case: BD Kids Hunter
+It prepares the data-pipeline mindset needed for good RAG and agentic systems later.
 
-The first case study is `BD Kids Hunter`.
+## First learning use case
 
-The goal is to find interesting lots of children’s comic books in Belgium, preferably:
+The first use case is:
+
+```text
+BD Kids Hunter
+```
+
+Goal:
+
+Find interesting lots of children’s comic books in Belgium, preferably:
 
 - around 1 € per comic book;
 - in French or Dutch;
 - sold as lots;
 - in good condition;
 - with reasonable shipping costs;
-- from sources like 2ememain and Vinted.
+- from 2ememain and Vinted.
 
-Facebook Marketplace is deliberately excluded from the first version because it is too complex for the educational objective.
+Facebook Marketplace is excluded from the first version because it is too complex for the educational objective.
 
 ## Learning objectives
 
-By the end of this project, I should understand and be able to implement:
+By the end of this project, I should understand:
 
-- n8n Code Nodes
 - n8n item structure
-- JavaScript data transformations
+- Code Nodes
+- JavaScript transformations
 - JSON normalization
 - regular expressions
 - price parsing
-- data deduplication
+- deduplication
 - scoring logic
 - PostgreSQL storage
 - alerting
-- simple local AI enrichment
-- workflow documentation
-- reusable automation patterns
-
-## Recommended position in the roadmap
-
-This project should be placed after:
-
-```text
-2026_project_01--llm_playground
-2026_project_02--local_llm_server
-```
-
-and before:
-
-```text
-2026_project_04--rag_system
-2026_project_05--rag_enterprise
-2026_project_06--ai_agents_lab
-```
-
-The reason is simple: RAG and agents become much easier to understand when the data pipeline mindset is already solid.
+- local AI enrichment for ambiguous cases
 
 ## Repository structure
 
@@ -100,6 +96,16 @@ The reason is simple: RAG and agents become much easier to understand when the d
     scoring.md
     learning-notes.md
     sources.md
+  workflows/
+    bd-kids-hunter/
+      README.md
+      01-v1-mock-pipeline.md
+      02-v2-2ememain-source.md
+      03-v3-vinted-source.md
+      04-v4-ai-analysis.md
+  use_cases/
+    bd-kids-hunter/
+      README.md
   examples/
     mock-listings.json
     normalized-listings.json
@@ -108,15 +114,4 @@ The reason is simple: RAG and agents become much easier to understand when the d
     001_create_tables.sql
   scripts/
     export-workflows.sh
-  workflows/
-    bd-kids-hunter/
-      README.md
-      01-v1-mock-pipeline.md
-      02-v2-2ememain-source.md
-      03-v3-vinted-source.md
-      04-v4-ai-analysis.md
 ```
-
-## Status
-
-Current status: planning and initial implementation.

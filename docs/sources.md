@@ -1,12 +1,10 @@
 # Sources
 
-## Planned sources
-
-### Mock source
+## Mock source
 
 Used for V1. No real scraping.
 
-### 2ememain
+## 2ememain
 
 Used for V2.
 
@@ -18,7 +16,7 @@ Rules:
 - parse only what is needed;
 - keep request frequency low.
 
-### Vinted
+## Vinted
 
 Used for V3.
 
@@ -29,11 +27,9 @@ Rules:
 - avoid aggressive scraping;
 - treat shipping as unknown when not available.
 
-## Excluded from V1
+## Facebook Marketplace
 
-### Facebook Marketplace
-
-Excluded because it is too complex for the first educational project:
+Excluded from V1 because it is too complex for this educational project:
 
 - login often required;
 - dynamic content;

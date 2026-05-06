@@ -1,9 +1,5 @@
 # V3 — Vinted Source
 
-## Goal
-
-Add Vinted as a second real source.
-
 ## Search ideas
 
 ```text

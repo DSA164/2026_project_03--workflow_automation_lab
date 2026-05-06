@@ -1,9 +1,5 @@
 # V1 — Mock Pipeline
 
-## Goal
-
-Build the full logic without scraping real websites.
-
 ## Workflow
 
 ```text

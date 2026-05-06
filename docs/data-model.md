@@ -2,8 +2,6 @@
 
 ## Canonical listing format
 
-All sources must be converted to a shared format.
-
 ```json
 {
   "source": "2ememain",
@@ -40,7 +38,7 @@ All sources must be converted to a shared format.
 }
 ```
 
-## Important principles
+## Principles
 
 - Keep `raw` for debugging.
 - Use `null` when a value is unknown.

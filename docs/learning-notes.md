@@ -1,6 +1,6 @@
 # Learning Notes
 
-## JavaScript concepts to learn
+## JavaScript concepts
 
 - objects
 - arrays
@@ -16,7 +16,7 @@
 - nullish coalescing
 - try/catch
 
-## n8n concepts to learn
+## n8n concepts
 
 - item structure
 - `$json`

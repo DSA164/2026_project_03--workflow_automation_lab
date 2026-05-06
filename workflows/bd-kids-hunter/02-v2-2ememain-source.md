@@ -1,10 +1,6 @@
 # V2 — 2ememain Source
 
-## Goal
-
-Add 2ememain as the first real source.
-
-## Approach
+## Workflow
 
 ```text
 HTTP Request 2ememain

@@ -1,8 +1,8 @@
 # Progress — Workflow Automation Lab
 
-## Project status
+## Current status
 
-Status: planned / in progress
+Planned / initial structure created.
 
 ## Milestones
 
@@ -13,7 +13,7 @@ Status: planned / in progress
 | 3 | Create mock data workflow | Todo |
 | 4 | Normalize listings | Todo |
 | 5 | Estimate comic book count | Todo |
-| 6 | Detect language FR/NL | Todo |
+| 6 | Detect FR/NL language | Todo |
 | 7 | Detect condition | Todo |
 | 8 | Compute price per comic book | Todo |
 | 9 | Add scoring logic | Todo |
@@ -23,7 +23,3 @@ Status: planned / in progress
 | 13 | Add 2ememain source | Todo |
 | 14 | Add Vinted source | Todo |
 | 15 | Add local AI analysis | Todo |
-
-## Notes
-
-This project is designed as a pedagogical bridge between local LLM foundations and more advanced RAG / agentic systems.

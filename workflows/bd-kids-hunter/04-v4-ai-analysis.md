@@ -4,7 +4,7 @@
 
 Use a local model only for ambiguous cases.
 
-## Good use cases for AI
+## Useful AI tasks
 
 - Is the listing really for children?
 - Estimate count if regex fails.

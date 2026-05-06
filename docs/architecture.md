@@ -2,8 +2,6 @@
 
 ## Core pattern
 
-Every practical workflow should follow this structure:
-
 ```text
 source
   ↓
@@ -22,43 +20,24 @@ store
 alert
 ```
 
-## Why this matters
-
-This separation prevents a workflow from becoming a large unmaintainable block of JavaScript.
-
-Each part has a responsibility:
+## Responsibility separation
 
 | Layer | Role |
 |---|---|
 | fetch | retrieve raw data from a page, API, webhook or manual input |
 | parse | extract useful fields from raw HTML or JSON |
 | normalize | convert source-specific fields into a shared schema |
-| deduplicate | avoid storing or alerting the same listing multiple times |
+| deduplicate | avoid storing or alerting the same item multiple times |
 | score | determine whether the item is interesting |
 | store | save the result in PostgreSQL |
 | alert | notify the user when the score is high enough |
 
-## n8n role
+## Why this matters
 
-n8n acts as the workflow orchestrator:
+This separation prevents n8n workflows from becoming unreadable blocks of JavaScript.
 
-- trigger execution;
-- call HTTP sources;
-- run Code Nodes;
-- call local AI APIs;
-- write to PostgreSQL;
-- send alerts.
-
-## Local AI role
-
-Local AI should not replace deterministic rules too early.
-
-Recommended order:
+It also prepares the mindset needed for RAG:
 
 ```text
-business rules
-  ↓
-heuristics
-  ↓
-local AI for ambiguous cases
+source → parse → normalize → chunk → embed → retrieve → answer
 ```
