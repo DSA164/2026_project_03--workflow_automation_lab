@@ -1,0 +1,32 @@
+[
+  {
+    "source": "mock_market",
+    "external_id": "bd001",
+    "title": "Lot de 24 BD enfants en très bon état",
+    "description": "Lot de bandes dessinées pour enfants, principalement en français. Très bon état général.",
+    "price": "24 €",
+    "shipping": "5 €",
+    "location": "Namur",
+    "url": "https://example.com/bd001"
+  },
+  {
+    "source": "mock_market",
+    "external_id": "bd002",
+    "title": "Tintin album ancien",
+    "description": "Un album Tintin, état correct.",
+    "price": "8 €",
+    "shipping": "4 €",
+    "location": "Bruxelles",
+    "url": "https://example.com/bd002"
+  },
+  {
+    "source": "mock_market",
+    "external_id": "bd003",
+    "title": "Une vingtaine de strips pour enfants",
+    "description": "Nederlandstalige kinderstrips, goede staat.",
+    "price": "18 €",
+    "shipping": "6 €",
+    "location": "Gent",
+    "url": "https://example.com/bd003"
+  }
+]

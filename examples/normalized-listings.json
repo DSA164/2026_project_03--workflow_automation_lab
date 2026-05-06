@@ -1,0 +1,20 @@
+[
+  {
+    "source": "mock_market",
+    "external_id": "bd001",
+    "url": "https://example.com/bd001",
+    "title": "Lot de 24 BD enfants en très bon état",
+    "description": "Lot de bandes dessinées pour enfants, principalement en français. Très bon état général.",
+    "price_total": 24,
+    "shipping_cost": 5,
+    "currency": "EUR",
+    "estimated_count": 24,
+    "estimated_price_per_bd": 1.21,
+    "language": "fr",
+    "condition": "tres_bon",
+    "is_lot": true,
+    "location": "Namur",
+    "country": "BE",
+    "raw": {}
+  }
+]

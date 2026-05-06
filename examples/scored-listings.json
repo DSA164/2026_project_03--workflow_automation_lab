@@ -1,0 +1,26 @@
+[
+  {
+    "source": "mock_market",
+    "external_id": "bd001",
+    "title": "Lot de 24 BD enfants en très bon état",
+    "price_total": 24,
+    "shipping_cost": 5,
+    "estimated_count": 24,
+    "estimated_price_per_bd": 1.21,
+    "language": "fr",
+    "condition": "tres_bon",
+    "location": "Namur",
+    "score": 86,
+    "decision": "alerte_forte",
+    "reasons": [
+      "Lot de 24 BD",
+      "Prix estimé proche de 1 €/BD",
+      "État très bon",
+      "Langue FR",
+      "Belgique"
+    ],
+    "risks": [
+      "Vérifier que toutes les BD sont adaptées aux enfants"
+    ]
+  }
+]
